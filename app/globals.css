@@ -1,15 +1,63 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-color: #191a1b;
+  --main-color: #79a617;
+  --sub-color: #48494b;
+  --sub-alt-color: #141516;
+  --text-color: #e7eae0;
+  --text-sub-color: #a5a5b0;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@layer utilities {
+  /* Theme utility classes */
+  .bg-theme-bg { background-color: var(--bg-color); }
+  .bg-theme-main { background-color: var(--main-color); }
+  .bg-theme-sub { background-color: var(--sub-color); }
+  .bg-theme-error { background-color: var(--error-color); }
+
+  .text-theme-text { color: var(--text-color); }
+  .text-theme-text-sub { color: var(--text-sub-color); }
+  .text-theme-main { color: var(--main-color); }
+  .text-theme-sub { color: var(--sub-color); }
+  .text-theme-bg { color: var(--bg-color); }
+
+  .border-theme-sub { border-color: var(--sub-color); }
+  .border-theme-main { border-color: var(--main-color); }
+
+  /* Hover states with instant color changes */
+  .hover\:bg-theme-main:hover { 
+    background-color: var(--main-color);
+    transition-duration: 50ms;
+  }
+  .hover\:bg-theme-error:hover { 
+    background-color: var(--error-color);
+    transition-duration: 50ms;
+  }
+  .hover\:text-theme-main:hover { 
+    color: var(--main-color);
+    transition-duration: 50ms;
+  }
+  .hover\:text-theme-bg:hover { 
+    color: var(--bg-color);
+    transition-duration: 50ms;
+  }
+  .hover\:border-theme-main:hover { 
+    border-color: var(--main-color);
+    transition-duration: 50ms;
+  }
+
+  /* Focus states */
+  .focus\:border-theme-main:focus { border-color: var(--main-color); }
+  .focus\:text-theme-main:focus { color: var(--main-color); }
+
+  /* Active states */
+  .active\:scale-95:active { 
+    transform: scale(0.95);
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 100ms;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
