@@ -13,15 +13,6 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Sumeet Haldar | Developer & Engineer",
   description: "Portfolio of Sumeet Haldar featuring scalable backend systems, real-time applications, and full-stack development with React, Next.js, and GCP.",
-  icons: {
-    icon: [
-      { url: "/logo-white.png", type: "image/png" },
-      { url: "/logo-white.svg", type: "image/svg+xml" },
-    ],
-    apple: [
-      { url: "/logo-white.png", type: "image/png" }
-    ],
-  },
 };
 
 export default function RootLayout({
@@ -32,6 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/logo.ico" sizes="any" />
+
         {/* Preload selected theme variables synchronously */}
         <script
           dangerouslySetInnerHTML={{
