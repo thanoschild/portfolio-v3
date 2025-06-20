@@ -13,6 +13,24 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Sumeet Haldar | Developer & Engineer",
   description: "Portfolio of Sumeet Haldar featuring scalable backend systems, real-time applications, and full-stack development with React, Next.js, and GCP.",
+  openGraph: {
+    title: "Sumeet Haldar | Developer & Engineer",
+    description: "Portfolio of Sumeet Haldar featuring scalable backend systems, real-time applications, and full-stack development.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200, // adjust if needed
+        height: 630, // adjust if needed
+        alt: "Sumeet Haldar Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sumeet Haldar | Developer & Engineer",
+    description: "Portfolio of Sumeet Haldar featuring scalable backend systems and full-stack development.",
+    images: ["/logo.png"],
+  },
 };
 
 export default function RootLayout({
