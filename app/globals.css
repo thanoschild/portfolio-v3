@@ -14,6 +14,7 @@
   .bg-theme-bg { background-color: var(--bg-color); }
   .bg-theme-main { background-color: var(--main-color); }
   .bg-theme-sub { background-color: var(--sub-color); }
+  .bg-theme-sub-alt { background-color: var(--sub-alt-color); }
   .bg-theme-error { background-color: var(--error-color); }
 
   .text-theme-text { color: var(--text-color); }

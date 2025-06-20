@@ -11,25 +11,25 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Sumeet Haldar | Developer & Engineer",
-  description: "Portfolio of Sumeet Haldar featuring scalable backend systems, real-time applications, and full-stack development with React, Next.js, and GCP.",
+  title: "Sumeet Haldar | Software Engineer",
+  description: "Sumeet Haldar, a developer crafting software that moves fast and scales even faster.",
   openGraph: {
-    title: "Sumeet Haldar | Developer & Engineer",
-    description: "Portfolio of Sumeet Haldar featuring scalable backend systems, real-time applications, and full-stack development.",
+    title: "Sumeet Haldar | Software Engineer",
+    description: "Sumeet Haldar, a developer crafting software that moves fast and scales even faster.",
     images: [
       {
-        url: "/logo.png",
-        width: 1200, // adjust if needed
-        height: 630, // adjust if needed
+        url: "/og-image.png",
+        width: 1200, 
+        height: 630,
         alt: "Sumeet Haldar Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sumeet Haldar | Developer & Engineer",
-    description: "Portfolio of Sumeet Haldar featuring scalable backend systems and full-stack development.",
-    images: ["/logo.png"],
+    title: "Sumeet Haldar | Software Engineer",
+    description: "Sumeet Haldar, a developer crafting software that moves fast and scales even faster.",
+    images: ["/og-image.png"],
   },
 };
 
