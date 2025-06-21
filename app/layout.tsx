@@ -7,21 +7,23 @@ import Spotlight from "@/components/core/Spotlight";
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
-  variable: "--font-roboto", 
+  variable: "--font-roboto",
   display: "swap",
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hsumeet.site"),
   title: "Sumeet Haldar | Software Engineer",
-  description: "Sumeet Haldar, a developer crafting software that moves fast and scales even faster.",
+  description:
+    "Sumeet Haldar, a developer crafting software that moves fast and scales even faster.",
   openGraph: {
     title: "Sumeet Haldar | Software Engineer",
-    description: "Sumeet Haldar, a developer crafting software that moves fast and scales even faster.",
+    description:
+      "Sumeet Haldar, a developer crafting software that moves fast and scales even faster.",
     images: [
       {
         url: "/og-image.png",
-        width: 1200, 
+        width: 1200,
         height: 630,
         alt: "Sumeet Haldar Logo",
       },
@@ -30,7 +32,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Sumeet Haldar | Software Engineer",
-    description: "Sumeet Haldar, a developer crafting software that moves fast and scales even faster.",
+    description:
+      "Sumeet Haldar, a developer crafting software that moves fast and scales even faster.",
     images: ["/og-image.png"],
   },
 };
@@ -85,9 +88,12 @@ export default function RootLayout({
           `}</style>
         </noscript>
       </head>
-      <body className={`${roboto.variable} antialiased`}>
+      <body
+        className={`${roboto.variable} antialiased`}
+        style={{ backgroundColor: "var(--bg-color)" }}
+      >
         <ThemeProvider>
-           <Spotlight />
+          <Spotlight />
           {children}
         </ThemeProvider>
       </body>
