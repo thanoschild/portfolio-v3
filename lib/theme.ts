@@ -28,7 +28,7 @@ export interface ThemeJSON {
   '--spotlight'?: string;
 }
 
-export const defaultTheme = "green";
+export const defaultTheme = "purple";
 
 export const defaultThemeColors: ThemeColors = {
   bg: '#0F172A',

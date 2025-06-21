@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/context/ThemeContext";
+import Spotlight from "@/components/core/Spotlight";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -11,6 +12,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hsumeet.site"),
   title: "Sumeet Haldar | Software Engineer",
   description: "Sumeet Haldar, a developer crafting software that moves fast and scales even faster.",
   openGraph: {
@@ -85,6 +87,7 @@ export default function RootLayout({
       </head>
       <body className={`${roboto.variable} antialiased`}>
         <ThemeProvider>
+           <Spotlight />
           {children}
         </ThemeProvider>
       </body>
