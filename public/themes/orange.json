@@ -1,0 +1,9 @@
+{
+  "--bg-color": "#ffede0",
+  "--main-color": "#fe5503",        
+  "--sub-color": "#af3900",         
+  "--sub-alt-color": "#fdd3bf",
+  "--text-color": "#3d1705",
+  "--text-sub-color": "#fb9147",
+  "--spotlight": "#c64101"           
+}

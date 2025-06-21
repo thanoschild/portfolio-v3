@@ -19,7 +19,7 @@ export const formatText = (
           key={idx}
           href={link.href}
           target="_blank" 
-          className="font-medium text-theme-text hover:text-theme-main transition-colors"
+          className="font-semibold text-theme-text hover:text-theme-main transition-colors"
         >
           {part}
         </Link>
@@ -28,7 +28,7 @@ export const formatText = (
 
     if (bold?.includes(part)) {
       return (
-        <span key={idx} className="font-medium text-theme-text hover:text-theme-main">
+        <span key={idx} className="font-semibold text-theme-text hover:text-theme-main">
           {part}
         </span>
       );

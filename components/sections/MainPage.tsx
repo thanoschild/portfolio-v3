@@ -41,7 +41,7 @@ export default function MainPage() {
   };
 
   return (
-    <div className="min-h-screen bg-theme-bg text-theme-text-sub">
+    <div className="min-h-screen bg-theme-bg text-theme-sub">
       <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
         <div className="lg:flex lg:justify-between lg:gap-4">
           <Header activeSection={activeSection} onSectionClick={scrollToSection} />

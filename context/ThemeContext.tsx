@@ -8,13 +8,13 @@ import {
   useRef,
   useLayoutEffect,
 } from "react";
-import { ThemeColors, themeColorVariables, availableThemes, defaultTheme, defaultThemeColors } from "@/lib/theme";
+import { ThemeColors, themeColorVariables, defaultTheme, defaultThemeColors, themes, getThemeColors } from "@/lib/theme";
 
 interface ThemeContextValue {
   currentTheme: string;
   themeColors: ThemeColors;
   setTheme: (name: string) => Promise<void>;
-  availableThemes: Record<string, string>;
+  themes: string[];
 }
 
 const ThemeContext = createContext<ThemeContextValue | null>(null);
@@ -41,26 +41,17 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const setTheme = useCallback(
     async (themeId: string) => {
       try {
-        const colors: ThemeColors = {
-          ...defaultThemeColors,
-          main: availableThemes[themeId] || defaultThemeColors.text,
-        };
-
+        const colors: ThemeColors = await getThemeColors(themeId)
         setCurrentTheme(themeId);
         setThemeColors(colors);
         applyThemeColors(colors);
         localStorage.setItem("preferred-theme", themeId);
       } catch (error) {
-       console.error("Failed to set theme:", error);
+        console.error("Failed to set theme:", error);
+        const colors: ThemeColors = await getThemeColors(defaultTheme)
         setCurrentTheme(defaultTheme);
-        setThemeColors({
-          ...defaultThemeColors,
-          main: availableThemes[defaultTheme] || defaultThemeColors.text,
-        });
-        applyThemeColors({
-          ...defaultThemeColors,
-          main: availableThemes[defaultTheme] || defaultThemeColors.text,
-        });
+        setThemeColors(colors);
+        applyThemeColors(colors);
       }
     },
     [applyThemeColors]
@@ -81,7 +72,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         currentTheme,
         themeColors,
         setTheme,
-        availableThemes,
+        themes,
       }}
     >
       {children}

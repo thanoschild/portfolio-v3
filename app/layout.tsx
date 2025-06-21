@@ -49,18 +49,19 @@ export default function RootLayout({
             __html: `
               (function () {
                 try {
-                  const availableThemes = {
-                    orange: '#f66e0d',
-                    blue: '#007acc',
-                    green: '#79a617',
-                    pink: '#f44c7f',
-                    yellow: '#e2b714'
-                  };
-                  
-                  const theme = localStorage.getItem('preferred-theme') || 'orange';
-                  const color = availableThemes[theme] || availableThemes['orange'];
-
-                  document.documentElement.style.setProperty('--main-color', color);
+                  const theme = localStorage.getItem('preferred-theme') || 'green';
+                  const xhr = new XMLHttpRequest();
+                  xhr.open('GET', 'themes/' + theme + '.json', false); 
+                  xhr.send(null);
+                  if (xhr.status === 200) {
+                    const data = JSON.parse(xhr.responseText);
+                    const root = document.documentElement;
+                    for (const key in data) {
+                      if (data.hasOwnProperty(key)) {
+                        root.style.setProperty(key, data[key]);
+                      }
+                    }
+                  }
                 } catch (e) {
                   console.error('Theme preload error:', e);
                 }
