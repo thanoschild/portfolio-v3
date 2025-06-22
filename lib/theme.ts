@@ -31,13 +31,13 @@ export interface ThemeJSON {
 export const defaultTheme = "purple";
 
 export const defaultThemeColors: ThemeColors = {
-  bg: '#0F172A',
-  main: '#5EEAD4',
-  sub: '#94a3b8',
-  subAlt: "#162445",
-  text: '#E2E8F0',
-  textSub: "#64748B",
-  spotlight: "#1D4ED8"
+  bg: '#1A132F',
+  main: '#ac5af6',
+  sub: '#c0acfb',
+  subAlt: "#2B1D4F",
+  text: '#F3E8FF',
+  textSub: "#D8B4FE",
+  spotlight: "#8B5CF6"
 };
 
 export const themes = [
@@ -46,13 +46,13 @@ export const themes = [
 
 export function extractThemeColors(json: ThemeJSON): ThemeColors {
   return {
-    bg: json['--bg-color']?.trim() ?? '#191a1b',
-    main: json['--main-color']?.trim() ?? '#79a617',
-    sub: json['--sub-color']?.trim() ?? '#48494b',
-    subAlt: json['--sub-alt-color']?.trim() ?? '#141516',
-    text: json['--text-color']?.trim() ?? '#e7eae0',
-    textSub: json['--text-sub-color']?.trim() ?? '#a5a5b0',
-    spotlight: json['--spotlight']?.trim() ?? '#1D4ED8',
+    bg: json['--bg-color']?.trim() ?? '#1A132F',
+    main: json['--main-color']?.trim() ?? '#ac5af6',
+    sub: json['--sub-color']?.trim() ?? '#c0acfb',
+    subAlt: json['--sub-alt-color']?.trim() ?? '#2B1D4F',
+    text: json['--text-color']?.trim() ?? '#F3E8FF',
+    textSub: json['--text-sub-color']?.trim() ?? '#D8B4FE',
+    spotlight: json['--spotlight']?.trim() ?? '#8B5CF6',
   };
 }
 

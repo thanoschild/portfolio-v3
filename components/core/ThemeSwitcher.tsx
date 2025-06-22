@@ -27,7 +27,7 @@ export default function ThemeSwitcher() {
               ? "scale-130"
               : "border-theme-sub hover:scale-105"}
           `}
-          style={{ background: availableThemes[themeId] || "#ccc" }}
+          style={{ background: availableThemes[themeId] }}
         />
       ))}
     </div>
