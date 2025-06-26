@@ -1,19 +1,19 @@
-import React from "react";
-import { projects } from "@/constant/ProjectContent";
-import SectionHeader from "@/components/core/SectionHeader";
-import Card from "@/components/core/Card";
+import React from 'react'
+import { profiles } from '@/constant/ProfileContent'
+import SectionHeader from '../core/SectionHeader'
+import Card from '../core/Card'
 
-export default function ProjectsSection() {
+export default function ProfileSection() {
   return (
     <section
-      id="projects"
+      id="profiles"
       className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
       aria-label="Selected projects"
     >
-      <SectionHeader title="Projects" />
+      <SectionHeader title="Profile" />
       <div>
         <ul className="group/list">
-          {projects.map((project, index) => (
+          {profiles.map((project, index) => (
             <li key={index} className="mb-12">
               <Card {...project} type="project" />
             </li>
@@ -21,5 +21,5 @@ export default function ProjectsSection() {
         </ul>
       </div>
     </section>
-  );
+  )
 }

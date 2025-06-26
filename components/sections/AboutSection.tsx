@@ -3,7 +3,7 @@ import { formatText } from '@/utils/formatText';
 import SectionHeader from '@/components/core/SectionHeader';
 import { about } from '@/constant/AboutContent';
 
-const AboutSection: React.FC = () => {
+export default function AboutSection() {
   return (
     <section
       id="about"
@@ -19,5 +19,3 @@ const AboutSection: React.FC = () => {
     </section>
   );
 };
-
-export default AboutSection;

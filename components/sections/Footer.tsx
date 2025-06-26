@@ -3,7 +3,7 @@ import { footerInfo } from "@/constant";
 import { formatText } from "@/utils/formatText";
 import ThemeSwitcher from "@/components/core/ThemeSwitcher";
 
-const Footer: React.FC = () => {
+export default function Footer() {
   return (
     <footer className="pb-16 text-sm sm:pb-0">
       {footerInfo.map(({ text, bold, links }, idx) => (
@@ -16,4 +16,4 @@ const Footer: React.FC = () => {
   );
 };
 
-export default Footer;
+

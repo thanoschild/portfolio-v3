@@ -34,4 +34,4 @@ export const footerInfo: ContentInfo[] = [
   },
 ];
 
-export const sections = ["about", "experience", "projects"];
+export const sections = ["about", "experience", "projects", "profiles"];

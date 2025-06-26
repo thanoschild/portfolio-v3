@@ -5,7 +5,7 @@ import SectionHeader from "@/components/core/SectionHeader";
 import Card from "@/components/core/Card";
 import { experiences } from "@/constant/ExperienceContent";
 
-const ExperienceSection: React.FC = () => {
+export default function ExperienceSection() {
   return (
     <section
       id="experience"
@@ -44,4 +44,3 @@ const ExperienceSection: React.FC = () => {
   );
 };
 
-export default ExperienceSection;

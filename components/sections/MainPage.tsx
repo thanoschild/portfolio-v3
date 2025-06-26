@@ -6,13 +6,14 @@ import ExperienceSection from "@/components/sections/ExperienceSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
+import ProfileSection from "./ProfileSection";
 
 export default function MainPage() {
   const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'experience', 'projects'];
+      const sections = ['about', 'experience', 'projects', 'profiles'];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -50,6 +51,7 @@ export default function MainPage() {
             <AboutSection />
             <ExperienceSection />
             <ProjectsSection />
+            <ProfileSection/>
             <Footer />
           </main>
         </div>

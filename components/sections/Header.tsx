@@ -9,7 +9,7 @@ interface HeaderProps {
   onSectionClick: (sectionId: string) => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ activeSection, onSectionClick }) => {
+export default function Header({ activeSection, onSectionClick } : HeaderProps) {
   const socialLinks = [
     { icon: LuGithub, href: "https://github.com/thanoschild", label: "GitHub" },
     {
@@ -59,5 +59,3 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onSectionClick }) => {
     </header>
   );
 };
-
-export default Header;

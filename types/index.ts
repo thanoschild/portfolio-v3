@@ -24,3 +24,9 @@ export interface Experience {
   technologies: string[];
   link: string;
 }
+
+export interface Profile {
+  title: string;
+  description: string;
+  link: string;
+}
