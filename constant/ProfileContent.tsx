@@ -1,5 +1,5 @@
 import { Profile } from "@/types";
-import { SiLeetcode, SiGeeksforgeeks, SiCodeforces } from "react-icons/si";
+import { SiLeetcode, SiGeeksforgeeks, SiGooglecloud } from "react-icons/si";
 
 
 export const profiles = [
@@ -15,4 +15,16 @@ export const profiles = [
     icon: <SiGeeksforgeeks/>,
     link: "https://www.geeksforgeeks.org/user/thanoschild/",
   },
+  {
+    title: "Google Cloud Certified",
+    description: "Certified Professional Data Engineer by Google Cloud.",
+    icon: <SiGooglecloud/>,
+    link: "https://www.credly.com/badges/c475b79c-8c44-44fe-893b-753a96c652e0/public_url",
+  },
+  {
+    title: "Google Cloud Certified",
+    description: "Certified Associate Cloud Engineer by Google Cloud.",
+    icon: <SiGooglecloud/>,
+    link: "https://www.credly.com/badges/4465450e-d036-4559-a82e-1a1a4ad76afa/public_url",
+  }
 ];
