@@ -1,6 +1,6 @@
 import React from "react";
 import { footerInfo } from "@/constant";
-import { formatText } from "@/utils/formatText";
+import { formatText } from "@/lib/formatText";
 import ThemeSwitcher from "@/components/core/ThemeSwitcher";
 
 export default function Footer() {

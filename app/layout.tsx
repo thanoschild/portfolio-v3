@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/context/ThemeContext";
 import Spotlight from "@/components/core/Spotlight";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -95,6 +96,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Spotlight />
           {children}
+          <GoogleAnalytics gaId="G-NM9ZLEBZ9M" />
         </ThemeProvider>
       </body>
     </html>

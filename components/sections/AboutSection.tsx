@@ -1,5 +1,5 @@
 import React from 'react';
-import { formatText } from '@/utils/formatText';
+import { formatText } from '@/lib/formatText';
 import SectionHeader from '@/components/core/SectionHeader';
 import { about } from '@/constant/AboutContent';
 
