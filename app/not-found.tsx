@@ -33,7 +33,7 @@ export default function NotFound() {
         </p>
         <Link
           href="/"
-          className="group flex items-center justify-center gap-3 px-6 py-2 rounded-full transition hover:text-theme-main"
+          className="group flex items-center text-theme-text justify-center gap-3 px-6 py-2 rounded-full transition hover:text-theme-main"
         >
           <span className="transition-transform duration-300 group-hover:-translate-x-1">
             <FaArrowLeftLong className="text-sm font-bold" />
