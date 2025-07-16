@@ -11,7 +11,7 @@ export const projects = [
     description: "Built a web app that generates professional portfolios using Gemini AI by uploading a resume within minutes, allowing users to customize sections and instantly publish their portfolios. Integrated AWS S3 for file storage and DynamoDB for structured user data, ensuring fast, scalable access to personalized portfolios for immediate skill presentation.",
     technologies: ["Next", "Gemini", "AWS S3", "AWS Dynamodb", "Clerk"],
     image: "/project/craftfolio.png",
-    link: "https://typeforce.store/",
+    link: "https://www.craftfolio.space/",
   },
 ];
 
