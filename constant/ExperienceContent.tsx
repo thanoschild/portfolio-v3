@@ -6,8 +6,8 @@ export const experiences: Experience[] = [
     title: "Software Engineer",
     company: "Equinix",
     description:
-      "Designed and developed scalable batch and streaming systems to ingest data from platforms like Oracle, ServiceNow, SharePoint, and Vertex, reducing data ingestion time by over 90% and significantly improving performance and reliability. Built microservices using Cloud Run to automate pipeline logic and streamline data workflows, reducing developer effort. Additionally, developed a Python-based solution to automate audit data collection, cutting manual effort by 70% and simplifying compliance processes.",
-    technologies: ["Java", "Python", "Google Cloud Platform", "SQL"],
+      "Built and optimized backend services for high-throughput data ingestion from Oracle, ServiceNow, SharePoint, and Vertex, reducing ingestion time by 90% and improving delivery latency and reliability. Developed multiple microservices using Cloud Run to automate pipeline logic and enhance performance, minimizing manual effort and streamlining data workflows to accelerate engineering processes. Additionally, implemented a Python-based solution to automate audit data collection, reducing quarterly manual effort by 70% and improving compliance efficiency.",
+    technologies: ["Java", "Python", "Google Cloud Platform", "SQL", "Kafka", "Docker"],
     link: "https://www.equinix.com/",
   },
   {
@@ -15,7 +15,7 @@ export const experiences: Experience[] = [
     title: "Intern",
     company: "Equinix",
     description:
-      "Built a DAG visualizer using React and React Flow to help developers preview task dependencies before deployment, improving visibility into upstream/downstream tasks and reducing debugging time by 30%. Also developed a secure data ingestion system using Dataflow to bring in financial data from Oracle Fusion, implementing end-to-end encryption and decryption to ensure data security.",
+      "Built a DAG visualizer using React and React Flow to allow developers to preview task dependencies before deployment, improving visibility into upstream and downstream tasks and reducing debugging time by 30%. Also developed a data ingestion system using Dataflow to ingest financial data from Oracle Fusion, implementing end-to-end encryption and decryption to ensure data security.",
     technologies: [
       "Java",
       "Python",

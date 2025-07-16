@@ -1,6 +1,7 @@
 import React from "react";
 import { headerInfo } from "@/constant";
-import { LuGithub, LuLinkedin, LuTwitter, LuMail } from "react-icons/lu";
+import { LuGithub, LuLinkedin, LuMail } from "react-icons/lu";
+import { RiTwitterXFill } from "react-icons/ri";
 import Navigation from "@/components/layout/Navigation";
 import Link from "next/link";
 
@@ -9,16 +10,25 @@ interface HeaderProps {
   onSectionClick: (sectionId: string) => void;
 }
 
-export default function Header({ activeSection, onSectionClick } : HeaderProps) {
+export default function Header({ activeSection, onSectionClick }: HeaderProps) {
   const socialLinks = [
-    { icon: LuGithub, href: "https://github.com/thanoschild", label: "GitHub" },
+    { icon: LuGithub, 
+      href: "https://github.com/thanoschild", 
+      label: "GitHub" 
+    },
     {
       icon: LuLinkedin,
       href: "https://www.linkedin.com/in/h-sumeet/",
       label: "LinkedIn",
     },
-    { icon: LuTwitter, href: "#", label: "Twitter" },
-    { icon: LuMail, href: "mailto:hsumeet11@gmail.com", label: "Email" },
+    { icon: RiTwitterXFill, 
+      href: "#", 
+      label: "Twitter" 
+    },
+    { icon: LuMail, 
+      href: "mailto:hsumeet11@gmail.com", 
+      label: "Email" 
+    },
   ];
 
   return (
@@ -58,4 +68,4 @@ export default function Header({ activeSection, onSectionClick } : HeaderProps) 
       </ul>
     </header>
   );
-};
+}
