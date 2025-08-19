@@ -1,9 +1,9 @@
-import MainPage from "@/components/sections/MainPage";
+import React from 'react'
+import MainPage from "@/components/pages/MainPage";
 
 export default function Home() {
   return (
-    <>
       <MainPage />
-    </>
   );
 }
+  

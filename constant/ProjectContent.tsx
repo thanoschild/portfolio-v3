@@ -1,28 +1,47 @@
 export const projects = [
   {
     title: "Typeforce",
-    description: "Built a full-stack real-time typing app using Next.js and WebSocket, featuring real-time multiplayer races and feedback to help users improve typing speed, accuracy, and track performance. Developed a responsive interface with a global leaderboard powered by Redis, enabling long-term progress tracking through detailed statistics and graphs, with data efficiently managed using MongoDB and Prisma.",
+    description: "Developed a full-stack real-time typing application using Next.js and WebSocket, featuring multiplayer races and instant feedback to help users improve typing speed and accuracy while tracking performance. Designed a responsive interface with a global leaderboard powered by Redis, enabling long-term progress tracking through detailed statistics and graphs, with data efficiently managed using MongoDB and Prisma.",
     technologies: ["React", "Next", "Express", "Mongodb", "Redis", "Prisma", "Websocket"],
     image: "/project/typeforce.png",
     link: "https://typeforce.store/",
+    github: "https://github.com/thanoschild/typeforce",
   },
   {
     title: "Craftfolio",
-    description: "Built a web app that generates professional portfolios using Gemini AI by uploading a resume within minutes, allowing users to customize sections and instantly publish their portfolios. Integrated AWS S3 for file storage and DynamoDB for structured user data, ensuring fast, scalable access to personalized portfolios for immediate skill presentation.",
+    description: "Created a web app that generates professional portfolios within minutes from a resume using Gemini AI, enabling users to customize sections and instantly publish their profiles. Integrated AWS S3 for file storage and DynamoDB for structured user data, ensuring fast, scalable access to personalized portfolios for immediate skill showcasing.",
     technologies: ["Next", "Gemini", "AWS S3", "AWS Dynamodb", "Clerk"],
     image: "/project/craftfolio.png",
     link: "https://www.craftfolio.space/",
+    github: "https://github.com/thanoschild/craftfolio",
   },
 ];
 
 
-const otherProjects = [
+export const allProjects = [
+  {
+    title: "Typeforce",
+    description: "Developed a full-stack real-time typing application using Next.js and WebSocket, featuring multiplayer races and instant feedback to help users improve typing speed and accuracy while tracking performance. Designed a responsive interface with a global leaderboard powered by Redis, enabling long-term progress tracking through detailed statistics and graphs, with data efficiently managed using MongoDB and Prisma.",
+    technologies: ["React", "Next", "Express", "Mongodb", "Redis", "Prisma", "Websocket"],
+    image: "/project/typeforce.png",
+    link: "https://typeforce.store/",
+    github: "https://github.com/thanoschild/typeforce",
+  },
+  {
+    title: "Craftfolio",
+    description: "Created a web app that generates professional portfolios within minutes from a resume using Gemini AI, enabling users to customize sections and instantly publish their profiles. Integrated AWS S3 for file storage and DynamoDB for structured user data, ensuring fast, scalable access to personalized portfolios for immediate skill showcasing.",
+    technologies: ["Next", "Gemini", "AWS S3", "AWS Dynamodb", "Clerk"],
+    image: "/project/craftfolio.png",
+    link: "https://www.craftfolio.space/",
+    github: "https://github.com/thanoschild/craftfolio",
+  },
   {
     title: "Fast Shopping",
     description: "Built a full-stack e-commerce app inspired from Flipkart using React, Express, MongoDB, and Stripe. It supports secure user authentication, product browsing, cart management, and seamless checkout. Designed for scalability with real-time updates and a responsive UI.",
     technologies: ["React", "Express", "Mongodb", "Stripe"],
     image: "/project/fast-shoping.png",
     link: "https://fast-shopping.vercel.app/",
+    github: "https://github.com/thanoschild/ecommerce-app",
   },
   {
     title: "StartUp Blog",
@@ -30,5 +49,6 @@ const otherProjects = [
     technologies: ["Next", "Sanity", "Sentry", "Oauth"],
     image: "/project/startup-blog.png",
     link: "https://blog-app-godspells-projects.vercel.app/",
+    github: "https://github.com/thanoschild/blog-app"
   }
 ]

@@ -6,7 +6,7 @@ import ExperienceSection from "@/components/sections/ExperienceSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
-import ProfileSection from "./ProfileSection";
+import ProfileSection from "@/components/sections/ProfileSection";
 
 export default function MainPage() {
   const [activeSection, setActiveSection] = useState('about');
