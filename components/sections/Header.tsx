@@ -1,9 +1,9 @@
 import React from "react";
 import { headerInfo } from "@/constant";
-import { LuGithub, LuLinkedin, LuMail } from "react-icons/lu";
-import { RiTwitterXFill } from "react-icons/ri";
 import Navigation from "@/components/layout/Navigation";
 import Link from "next/link";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 interface HeaderProps {
   activeSection: string;
@@ -12,20 +12,20 @@ interface HeaderProps {
 
 export default function Header({ activeSection, onSectionClick }: HeaderProps) {
   const socialLinks = [
-    { icon: LuGithub, 
+    { icon: FaGithub, 
       href: "https://github.com/thanoschild", 
       label: "GitHub" 
     },
     {
-      icon: LuLinkedin,
+      icon: FaLinkedin,
       href: "https://www.linkedin.com/in/h-sumeet/",
       label: "LinkedIn",
     },
-    { icon: RiTwitterXFill, 
+    { icon: FaXTwitter, 
       href: "#", 
       label: "Twitter" 
     },
-    { icon: LuMail, 
+    { icon: FaEnvelope, 
       href: "mailto:hsumeet11@gmail.com", 
       label: "Email" 
     },
