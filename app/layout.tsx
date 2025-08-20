@@ -70,6 +70,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Spotlight />
           {children}
+          {/* <FeedbackSection/> */}
           <GoogleAnalytics gaId="G-NM9ZLEBZ9M" />
         </ThemeProvider>
       </body>

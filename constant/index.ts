@@ -8,7 +8,7 @@ export const headerInfo: HeaderInfo = {
 
 export const footerInfo: ContentInfo[] = [
   {
-    text: `Coded in yours favorite Visual Studio Code. Built with Next.js and Tailwind CSS, and deployed on Vercel. All text is set in the Roboto font.`,
+    text: `Coded in yours favorite Visual Studio Code. Built with Next.js and Tailwind CSS, and deployed on Vercel. All text is set in Roboto.`,
     links: [
       {
         match: "Visual Studio Code",
